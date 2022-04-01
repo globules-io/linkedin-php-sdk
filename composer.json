@@ -1,5 +1,5 @@
 {
-    "name": "pmg/linkedin-api-php-client",
+    "name": "globules-io/linkedin-php-sdk",
     "description": "This package is an SDK for using LinkedIn V2 Marketing API. You can use it for managing Company Pages in this social network",
     "type": "library",
     "keywords": [
@@ -9,17 +9,17 @@
         "social", "rest", "api", "client", "social network", "auth", "authorization",
         "wrapper", "integration", "platform"
     ],
-    "homepage": "https://github.com/AgencyPMG/linkedin-api-php-client",
+    "homepage": "https://github.com/globules-io/linkedin-php-sdk",
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-curl": "*",
-        "guzzlehttp/guzzle": "^7.3.0"
+        "guzzlehttp/guzzle": "^7.4.2"
     },
     "license": "MIT",
     "support": {
-        "docs": "https://github.com/AgencyPMG/linkedin-api-php-client/blob/master/README.md",
-        "source": "https://github.com/AgencyPMG/linkedin-api-php-client",
-        "issues": "https://github.com/AgencyPMG/linkedin-api-php-client/issues"
+        "docs": "https://github.com/globules-io/linkedin-php-sdk/blob/master/README.md",
+        "source": "https://github.com/globules-io/linkedin-php-sdk",
+        "issues": "https://github.com/globules-io/linkedin-php-sdk/issues"
     },
     "autoload": {
         "psr-4": {"LinkedIn\\": "src/"}
