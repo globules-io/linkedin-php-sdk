@@ -1,7 +1,4 @@
-LinkedIn API Client with OAuth 2 authorization written on PHP
-============================================================
-[![Build Status](https://travis-ci.org/globules-io/linkedin-php-sdk.svg?branch=master)](https://travis-ci.org/globules-io/linkedin-php-sdk) [![Code Climate](https://codeclimate.com/github/globules-io/linkedin-php-sdk/badges/gpa.svg)](https://codeclimate.com/github/globules-io/linkedin-php-sdk) [![Packagist](https://img.shields.io/packagist/dt/globules-io/linkedin-php-sdk.svg)](https://packagist.org/packages/globules-io/linkedin-php-sdk-v2) [![GitHub license](https://img.shields.io/github/license/globules-io/linkedin-php-sdk.svg)](https://github.com/globules-io/linkedin-php-sdk/blob/master/LICENSE.md)
-
+LinkedIn PHP SDK
 
 ## Installation
 
