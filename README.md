@@ -1,4 +1,4 @@
-##LinkedIn PHP SDK
+## LinkedIn PHP SDK
 
 ## Installation
 
