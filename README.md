@@ -1,8 +1,8 @@
-LinkedIn PHP SDK
+##LinkedIn PHP SDK
 
 ## Installation
 
-You will need at least PHP 7.3. We match [officially supported](https://www.php.net/supported-versions.php) versions of PHP.
+You will need at least PHP 7.4. Compatible with PHP 8.x
 
 Use [composer](https://getcomposer.org/) package manager to install the lastest version of the package:
 
