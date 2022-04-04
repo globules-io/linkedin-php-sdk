@@ -193,18 +193,24 @@ class AccessToken implements \JsonSerializable
             throw new \InvalidArgumentException(
                 'Argument is not array'
             );
-        }
+        }        
         self::validateAccessToken($responseArray);
         self::validateExpiresIn($responseArray);
-        self::validateRefreshToken($responseArray);
-        self::validateRefreshTokenExpiresIn($responseArray);
-
-        return new static(
-            $responseArray['access_token'],
-            $responseArray['expires_in'] + time(),
-            $responseArray['refresh_token'],
-            $responseArray['refresh_token_expires_in'] + time()
-        );
+        if(isset($responseArray['refresh_token'])){
+            self::validateRefreshToken($responseArray);
+            self::validateRefreshTokenExpiresIn($responseArray);
+            return new static(
+                $responseArray['access_token'],
+                $responseArray['expires_in'] + time(),
+                $responseArray['refresh_token'],
+                $responseArray['refresh_token_expires_in'] + time()
+            );
+        }else{
+            return new static(
+                $responseArray['access_token'],
+                $responseArray['expires_in'] + time()
+            );
+        }        
     }
     private static function validateAccessToken($responseArray)
     {
@@ -241,6 +247,7 @@ class AccessToken implements \JsonSerializable
     /**
      * Specify data format for json_encode()
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return [
