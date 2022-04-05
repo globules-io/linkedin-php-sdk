@@ -17,15 +17,12 @@ Or add this package as dependency to `composer.json`.
 ## Get Started
 
 Before you will get started, play visit to [LinkedIn API Documentation](https://docs.microsoft.com/en-us/linkedin/marketing/getting-started).
-This will save you a lot of time and prevent some silly questions.
-
-To start working with LinkedIn API, you will need to
-get application client id and secret.
+This will save you a lot of time and prevent some silly questions. To start working with LinkedIn API, you will need to get application client id and secret.
 
 Go to [LinkedIn Developers portal](https://www.linkedin.com/developers/)
 and create new application in section My Apps. Once your app has been approved, you will get a ClientId and ClientSecret, that you will use later.
 
-## LinkedIn Restrictions
+#### LinkedIn Restrictions
 
 The scopes or permissions aren't available right away when you register an application with LinkedIn. 
 When you first create your app in the developer portal, you only have access to the `w_member_social` scope.
