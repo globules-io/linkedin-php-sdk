@@ -138,7 +138,7 @@ $client->setAccessToken($accessToken);
 LinkedIn tokens expire after 60 days but you can renew your access token by using the refresh token. 
 Tokens can be then refreshed for 365 days, after which the end-user must re-auth.
 ```php
-$client->renewTokenFromRefreshToken($refresToken);
+$client->renewTokenFromRefreshToken($refreshToken);
 ```
 
 #### Performing API calls
