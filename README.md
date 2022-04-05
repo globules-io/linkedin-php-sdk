@@ -25,6 +25,14 @@ get application client id and secret.
 Go to [LinkedIn Developers portal](https://www.linkedin.com/developers/)
 and create new application in section My Apps. Once your app has been approved, you will get a ClientId and ClientSecret, that you will use later.
 
+## LinkedIn Restrictions
+
+The scopes or permissions aren't available right away when you register an application with LinkedIn. 
+When you first create your app in the developer portal, you only have access to the `w_member_social` scope.
+You can start developing but the token you obtain at this stage will have no refresh information.
+Then you need to request access to the `Marketing Developer Platform` which will give you 2 additionals scopes, `r_emailaddress`, `r_liteprofile`
+Once your request has been approved, you will get access to all the remaining scopes and your token will have refresh information.
+
 
 #### Bootstrapping autoloader and instantiating a client
 
