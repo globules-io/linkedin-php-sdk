@@ -134,6 +134,13 @@ $accessToken = new AccessToken($tokenData['token'], $tokenData['expiresAt']);
 $client->setAccessToken($accessToken);
 ```
 
+#### Renewing Tokens
+LinkedIn tokens expire after 60 days but you can renew your access token by using the refresh token. 
+Tokens can be then refreshed for 365 days, after which the end-user must re-auth.
+```php
+$client->renewTokenFromRefreshToken($refresToken);
+```
+
 #### Performing API calls
 
 All API calls can be called through simple method:
